@@ -1,0 +1,33 @@
+{
+  "name": "react-payme-paycode",
+  "description": "A React component for PayME PayCode payments",
+  "version": "0.0.1",
+  "main": "./dist/index.js",
+  "module": "./dist/index.mjs",
+  "types": "./dist/index.d.ts",
+  "homepage": "https://google.com",
+  "repository": {
+    "url": "https://github.com/deventw/react-payme-paycode"
+  },
+  "scripts": {
+    "build": "tsup"
+  },
+  "keywords": [
+    "react",
+    "payme",
+    "paycode",
+    "payment"
+  ],
+  "author": "deventw",
+  "license": "MIT",
+  "peerDependencies": {
+    "react": "*",
+    "react-dom": "*"
+  },
+  "devDependencies": {
+    "@types/react": "^19.0.10",
+    "@types/react-dom": "^19.0.4",
+    "tsup": "^8.4.0",
+    "typescript": "^5.8.3"
+  }
+}
