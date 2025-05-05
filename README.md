@@ -37,6 +37,7 @@ function App() {
         errorCorrectionLevel="M"
         size={344}
         consumer={false}
+        logoSrc={"/assets/logo.png"}
       />
     </div>
   );
@@ -56,10 +57,11 @@ The PayCode component accepts the following props:
 | `errorCorrectionLevel` | `string` | "M" | Error correction level of the PayCode. |
 | `size` | `number` | 300 | The size of the PayCode in pixels (recommended minimum: 250px for optimal scanning). |
 | `consumer` | `boolean` | false | UI style variant for whether the PayCode is for a consumer or not. |
+| `logoSrc` | `string` | - | URL of the logo image to be displayed in the PayCode. |
 
 ## Acknowledgement
 
-This project is a learning exercise to explore payment gateway integration in React applications. It is not affiliated with PayMe and is intended for educational purposes only. The PayCode component simulates payment processes without handling real transactions.
+This project explores payment UI component integration in React applications for educational purposes. It is not affiliated with PayMe.
 
 ## License
 

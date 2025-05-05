@@ -1,7 +1,7 @@
 {
   "name": "react-payme-paycode",
   "description": "A React component for PayME PayCode payments",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "main": "./dist/index.js",
   "module": "./dist/index.mjs",
   "types": "./dist/index.d.ts",
