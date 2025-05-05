@@ -51,7 +51,7 @@ The PayCode component accepts the following props:
 
 | Prop | Type | Default | Description |
 |------|------|---------|-------------|
-| `text` | `string` | - | Text/URL to be encoded in the QR code. |
+| `value` | `string` | - | Text/URL to be encoded in the QR code. |
 | `typeNumber` | `number` | 4 | QR code type number (0-40). Use 0 for Auto Detect, higher numbers allow more data. |
 | `errorCorrectionLevel` | `string` | "M" | Error correction level of the PayCode. |
 | `size` | `number` | 300 | The size of the PayCode in pixels (recommended minimum: 250px for optimal scanning). |
