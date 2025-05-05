@@ -1,11 +1,11 @@
 {
   "name": "react-payme-paycode",
   "description": "A React component for PayME PayCode payments",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "main": "./dist/index.js",
   "module": "./dist/index.mjs",
   "types": "./dist/index.d.ts",
-  "homepage": "https://google.com",
+  "homepage": "https://github.com/deventw/react-payme-paycode",
   "repository": {
     "url": "https://github.com/deventw/react-payme-paycode"
   },
