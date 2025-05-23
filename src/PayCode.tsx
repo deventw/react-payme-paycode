@@ -8,7 +8,7 @@ export const PayCode = (props: PayCodeProps) => {
   const {
     value,
     typeNumber = 0,
-    errorCorrectionLevel = "M",
+    errorCorrectionLevel = "H",
     size = 344,
     consumer = false,
     logoSrc,
@@ -26,7 +26,7 @@ export const PayCode = (props: PayCodeProps) => {
         canvas: canvasRef.current,
       });
     }
-  }, [value, typeNumber, errorCorrectionLevel, size, consumer]);
+  }, [value, typeNumber, errorCorrectionLevel, size, consumer, logoSrc]);
 
   return <canvas ref={canvasRef} width={size} height={size}></canvas>;
 };
