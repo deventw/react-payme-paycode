@@ -84,25 +84,7 @@ export function drawPayCode({
     const logoLeftClip = width / 2 - ((width - 2 * margin) * logoClipPercent) / 2;
     const logoRightClip = width / 2 + ((width - 2 * margin) * logoClipPercent) / 2;
 
-    // PayMe icon in bottom right
-    drawIcon({
-        ctx,
-        iconWidth,
-        width,
-        margin,
-        consumer
-    });
-
-    // business logo in the middle
-    drawLogo({
-        ctx,
-        img: logo,
-        logoWidth,
-        width,
-        margin,
-        consumer
-    });
-
+    // Draw QR code cells
     for (let r = 0; r < cellCount; r += 1) {
         for (let c = 0; c < cellCount; c += 1) {
             const x = c * cellRadius * 2 + offset;
@@ -133,5 +115,37 @@ export function drawPayCode({
                 ctx.fill();
             }
         }
+    }
+
+    // PayMe icon in bottom right
+    drawIcon({
+        ctx,
+        iconWidth,
+        width,
+        margin,
+        consumer
+    });
+
+    // business logo in the middle
+    if (logo.complete) {
+        drawLogo({
+            ctx,
+            img: logo,
+            logoWidth,
+            width,
+            margin,
+            consumer
+        });
+    } else {
+        logo.onload = () => {
+            drawLogo({
+                ctx,
+                img: logo,
+                logoWidth,
+                width,
+                margin,
+                consumer
+            });
+        };
     }
 } 

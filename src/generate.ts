@@ -75,12 +75,28 @@ export var update_qrcode = function ({ text, typeNumber, errorCorrectionLevel, s
     canvas.height = size;
     ctx.setTransform(1, 0, 0, 1, 0, 0);
     ctx.clearRect(0, 0, canvas.width, canvas.height);
+
+    // Draw QR code immediately
     drawPayCode({
       qr,
       canvas,
-      size,  // Use the size from props instead of hardcoded 7
+      size,
       logo,
       consumer
     });
+
+    // If logo is not loaded yet, redraw when it loads
+    if (imageSrc && !logo.complete) {
+      logo.onload = () => {
+        ctx.clearRect(0, 0, canvas.width, canvas.height);
+        drawPayCode({
+          qr,
+          canvas,
+          size,
+          logo,
+          consumer
+        });
+      };
+    }
   }
 };
