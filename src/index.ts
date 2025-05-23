@@ -1,3 +1,3 @@
 export * from './qrcode';
-export * from './PayCode';
-export * from './types';
+export { PayCode } from './PayCode';
+export type { PayCodeProps } from './types';
