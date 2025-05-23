@@ -1,4 +1,4 @@
-import { drawPayCode } from "./lib/paycode";
+import { drawPayCode } from "./paycode/PayCode";
 import { ErrorCorrectionLevel, Mode } from "./qrcode/types";
 import { QRCode } from "./qrcode/QRCode";
 
@@ -75,6 +75,12 @@ export var update_qrcode = function ({ text, typeNumber, errorCorrectionLevel, s
     canvas.height = size;
     ctx.setTransform(1, 0, 0, 1, 0, 0);
     ctx.clearRect(0, 0, canvas.width, canvas.height);
-    drawPayCode(qr, canvas, 7, logo, consumer);
+    drawPayCode({
+      qr,
+      canvas,
+      size,  // Use the size from props instead of hardcoded 7
+      logo,
+      consumer
+    });
   }
 };
