@@ -8,7 +8,7 @@ export const PayCode = (props: PayCodeProps) => {
   const {
     value,
     typeNumber = 0,
-    errorCorrectionLevel = "H",
+    errorCorrectionLevel = "M",
     size = 344,
     consumer = false,
     logoSrc,

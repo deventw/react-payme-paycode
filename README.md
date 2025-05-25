@@ -34,7 +34,7 @@ function App() {
       <PayCode 
         value="https://payment.example.com/123456"
         typeNumber={0}
-        errorCorrectionLevel="H"
+        errorCorrectionLevel="M"
         size={344}
         consumer={false}
         logoSrc={"/assets/logo.png"}
@@ -54,7 +54,7 @@ The PayCode component accepts the following props:
 | ---------------------- | --------- | ------- | ------------------------------------------------------------------------------------ |
 | `value`                | `string`  | -       | Text/URL to be encoded in the QR code.                                               |
 | `typeNumber`           | `number`  | 0       | QR code type number (0-40). Use 0 for Auto Detect, higher numbers allow more data.   |
-| `errorCorrectionLevel` | `string`  | "H"     | Error correction level of the PayCode.                                               |
+| `errorCorrectionLevel` | `string`  | "M"     | Error correction level of the PayCode.                                               |
 | `size`                 | `number`  | 300     | The size of the PayCode in pixels (recommended minimum: 250px for optimal scanning). |
 | `consumer`             | `boolean` | false   | UI style variant for whether the PayCode is for a consumer or not.                   |
 | `logoSrc`              | `string`  | -       | URL of the logo image to be displayed in the PayCode.                                |

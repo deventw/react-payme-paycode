@@ -18,8 +18,8 @@
     "qrcode",
     "typescript"
   ],
-  "author": "",
-  "license": "ISC",
+  "author": "deventw",
+  "license": "MIT",
   "peerDependencies": {
     "react": ">=16.8.0",
     "react-dom": ">=16.8.0"
