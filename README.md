@@ -61,7 +61,7 @@ The PayCode component accepts the following props:
 
 ## Acknowledgement
 
-This project explores payment UI component integration in React applications for educational purposes. It is not affiliated with PayMe.
+This project explores payment UI component integration in React applications for learning purposes. It is not affiliated with PayMe.
 
 ## License
 
