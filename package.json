@@ -1,7 +1,7 @@
 {
   "name": "react-payme-paycode",
-  "version": "1.0.2",
-  "description": "A React component for generating PayMe QR codes",
+  "version": "1.0.3",
+  "description": "A React component for generating PayMe QR codes 🚀",
   "main": "dist/index.js",
   "module": "dist/index.esm.js",
   "types": "dist/index.d.ts",
@@ -16,10 +16,21 @@
     "react",
     "payme",
     "qrcode",
-    "typescript"
+    "typescript",
+    "react-component",
+    "payment",
+    "payment",
+    "qr-code",
+    "paycode",
+    "javascript"
   ],
   "author": "deventw",
   "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/deventw/react-payme-paycode.git"
+  },
+  "homepage": "https://github.com/deventw/react-payme-paycode#readme",
   "peerDependencies": {
     "react": ">=16.8.0",
     "react-dom": ">=16.8.0"
